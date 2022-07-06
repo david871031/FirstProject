@@ -7,9 +7,6 @@
 
 <h2>會員訂單列表</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
     <tr>
         <th>
@@ -54,7 +51,8 @@
             @Html.DisplayFor(modelItem => item.fDate)
         </td>
         <td>
-            <a href="@Url.Action("OrderDetail")?OrderGuid=@item.fOrderGuid" class="btn btn-info">訂單明細</a>
+            <a href="@Url.Action("OrderDetail")?fOrderGuid=@item.fOrderGuid"
+               class="btn btn-info">訂單明細</a>
         </td>
     </tr>
 }

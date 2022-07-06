@@ -60,19 +60,17 @@
             @Html.DisplayFor(modelItem => item.fIsApproved)
         </td>
         <td>
-           <a href="@Url.Action("DeleteCar")?fId=@item.fId"
-              class="btn btn-danger"
-              onclick="return confirm('確定放棄購買 @item.fName 嗎?')">刪除購物車</a>
+            <a href="@Url.Action("DeleteCar")?fId=@item.fId" class="btn btn-danger" onclick="return confirm('確定放棄購買 @item.fName 嗎?')">刪除購物車</a>
         </td>
     </tr>
 }
 
 </table>
-
 <form action="@Url.Action("ShoppingCar")" method="post">
     <div class="form-horizontal">
         <h4>填寫訂單收件人資料</h4>
         <hr />
+
         <div class="form-group">
             <span class="control-label col-md-2">收件人姓名</span>
             <div class="col-md-10">

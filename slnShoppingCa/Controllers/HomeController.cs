@@ -10,7 +10,7 @@ namespace slnShoppingCa.Controllers
 {
     public class HomeController : Controller
     {
-        dbShoppingCarEntities1 db = new dbShoppingCarEntities1();
+        dbShoppingCarEntities db = new dbShoppingCarEntities();
         public ActionResult Index()
         {
             //取得所有產品放入products

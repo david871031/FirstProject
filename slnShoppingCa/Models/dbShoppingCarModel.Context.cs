@@ -13,10 +13,10 @@ namespace slnShoppingCa.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class dbShoppingCarEntities1 : DbContext
+    public partial class dbShoppingCarEntities : DbContext
     {
-        public dbShoppingCarEntities1()
-            : base("name=dbShoppingCarEntities1")
+        public dbShoppingCarEntities()
+            : base("name=dbShoppingCarEntities")
         {
         }
     

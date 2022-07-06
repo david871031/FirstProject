@@ -13,7 +13,7 @@ namespace slnShoppingCa.Models
     using System.Collections.Generic;
     using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
-    
+
     public partial class tOrder
     {
         public int fId { get; set; }
@@ -40,4 +40,5 @@ namespace slnShoppingCa.Models
         [DisplayName("訂單日期")]
         public Nullable<System.DateTime> fDate { get; set; }
     }
+
 }

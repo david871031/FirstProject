@@ -31,7 +31,7 @@
           <Key>
             <PropertyRef Name="fId" />
           </Key>
-          <Property Name="fId" Type="int" Nullable="false" />
+          <Property Name="fId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="fOrderGuid" Type="nvarchar" MaxLength="50" />
           <Property Name="fUserId" Type="nvarchar" MaxLength="50" />
           <Property Name="fPId" Type="nvarchar" MaxLength="50" />
@@ -87,7 +87,7 @@
           <Key>
             <PropertyRef Name="fId" />
           </Key>
-          <Property Name="fId" Type="Int32" Nullable="false" />
+          <Property Name="fId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="fOrderGuid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="fUserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="fPId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -106,7 +106,7 @@
           <Property Name="fPrice" Type="Int32" />
           <Property Name="fImg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="dbShoppingCarEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="dbShoppingCarEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="tMember" EntityType="Self.tMember" />
           <EntitySet Name="tOrder" EntityType="Self.tOrder" />
           <EntitySet Name="tOrderDetail" EntityType="Self.tOrderDetail" />
@@ -117,7 +117,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="dbShoppingCarModelStoreContainer" CdmEntityContainer="dbShoppingCarEntities1">
+        <EntityContainerMapping StorageEntityContainer="dbShoppingCarModelStoreContainer" CdmEntityContainer="dbShoppingCarEntities">
           <EntitySetMapping Name="tMember">
             <EntityTypeMapping TypeName="dbShoppingCarModel.tMember">
               <MappingFragment StoreEntitySet="tMember">

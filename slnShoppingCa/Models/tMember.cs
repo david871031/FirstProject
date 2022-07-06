@@ -13,7 +13,7 @@ namespace slnShoppingCa.Models
     using System.Collections.Generic;
     using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
-    
+
     public partial class tMember
     {
         public int fId { get; set; }
@@ -35,4 +35,5 @@ namespace slnShoppingCa.Models
         [EmailAddress]
         public string fEmail { get; set; }
     }
+
 }

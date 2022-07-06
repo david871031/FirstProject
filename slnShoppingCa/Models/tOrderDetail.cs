@@ -12,7 +12,7 @@ namespace slnShoppingCa.Models
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
-    
+
     public partial class tOrderDetail
     {
         public int fId { get; set; }
@@ -38,4 +38,5 @@ namespace slnShoppingCa.Models
         [DisplayName("是否為訂單")]
         public string fIsApproved { get; set; }
     }
+
 }

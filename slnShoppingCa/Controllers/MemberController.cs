@@ -11,7 +11,7 @@ namespace slnShoppingCa.Controllers
     [Authorize]
     public class MemberController : Controller
     {
-        dbShoppingCarEntities1 db = new dbShoppingCarEntities1();
+        dbShoppingCarEntities db = new dbShoppingCarEntities();
         // GET: Member
         public ActionResult Index()
         {
